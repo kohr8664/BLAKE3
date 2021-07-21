@@ -15,13 +15,13 @@ set(
 )
 
 # Add the library to the building system
-add_library(${CMAKE_PROJECT_NAME} SHARED ${SRCS})
+add_library(blake3 SHARED ${SRCS})
 
 # Add the include folder
-target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE "./include")
+target_include_directories(blake3 PRIVATE "./include")
 
 # Enable compiler optimizations
-target_compile_options(${CMAKE_PROJECT_NAME} PRIVATE -O3)
+target_compile_options(blake3 PRIVATE -O3)
 
 # Set specific compiler flags for some files
 set_source_files_properties(
